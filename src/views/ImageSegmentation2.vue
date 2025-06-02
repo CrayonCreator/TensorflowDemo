@@ -77,8 +77,8 @@ const SegmentateImage = async () => {
     const model = bodySegmentation.SupportedModels.BodyPix;
     const segmenterConfig = {
       architecture: 'ResNet50' as const,
-      outputStride: 16,
-      quantBytes: 4
+      outputStride: 16 as const,
+      quantBytes: 4 as const
     };
     const segmenter = await bodySegmentation.createSegmenter(model, segmenterConfig);
     const segmentationConfig = {
@@ -273,3 +273,4 @@ const SegmentateImage = async () => {
   }
 }
 </style>
+
