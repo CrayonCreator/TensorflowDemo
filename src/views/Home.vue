@@ -1,10 +1,12 @@
 <template>
   <div class="home">
-    <Button @click="ToImageSegmentation1">Image Segmentation1</Button>
-    <Button @click="ToImageSegmentation2">Image Segmentation2</Button>
-    <Button @click="ToDevideToPieces">Devide To Pieces</Button>
+    <h1 class="title">GeGe Need</h1>
+    <div class="button-container">
+      <Button type="primary" size="large" @click="ToImageSegmentation1">Image Segmentation1</Button>
+      <Button type="primary" size="large" @click="ToImageSegmentation2">Image Segmentation2</Button>
+      <Button type="primary" size="large" @click="ToDevideToPieces">Devide To Pieces</Button>
+    </div>
   </div>
-
 </template>
 
 <script setup lang="ts">
@@ -26,8 +28,44 @@ defineOptions({
 });
 </script>
 
-<style scoped>
-Button {
-  margin-top: 20px;
+<style scoped lang="less">
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 1000;
+  color: #333333;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+
+  @media (max-width: 768px) {
+    max-width: 90%;
+  }
+
+  :deep(.btn) {
+    background-color: #444444;
+    color: white;
+
+    &:hover {
+      background-color: #333333;
+    }
+  }
 }
 </style>
+
+
