@@ -5,6 +5,7 @@
       <Button type="primary" size="large" @click="ToImageSegmentation1">Image Segmentation1</Button>
       <Button type="primary" size="large" @click="ToImageSegmentation2">Image Segmentation2</Button>
       <Button type="primary" size="large" @click="ToDevideToPieces">Devide To Pieces</Button>
+      <Button type="primary" size="large" @click="ToFaceLandmarks">Face Landmarks Detection</Button>
     </div>
   </div>
 </template>
@@ -21,6 +22,10 @@ const ToImageSegmentation2 = () => {
 
 const ToDevideToPieces = () => {
   window.location.href = '/devide-to-pieces'
+}
+
+const ToFaceLandmarks = () => {
+  window.location.href = '/face-landmarks'
 }
 
 defineOptions({
@@ -67,5 +72,3 @@ defineOptions({
   }
 }
 </style>
-
-

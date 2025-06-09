@@ -22,7 +22,12 @@ const router = createRouter({
       path: "/devide-to-pieces",
       name: "devideToPieces",
       component: () => import("../views/DevideToPieces.vue"),
-    }
+    },
+    {
+      path: "/face-landmarks",
+      name: "faceLandmarks",
+      component: () => import("../views/FaceLandmarksDetection.vue"),
+    },
   ],
 });
 

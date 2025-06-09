@@ -16,7 +16,11 @@
   },
   "dependencies": {
     "@tensorflow-models/body-segmentation": "^1.0.2",
+    "@tensorflow-models/face-landmarks-detection": "^1.0.6",
     "@tensorflow/tfjs": "^4.22.0",
+    "@tensorflow/tfjs-backend-wasm": "^4.22.0",
+    "@tensorflow/tfjs-backend-webgl": "^4.22.0",
+    "dat.gui": "^0.7.9",
     "vue": "^3.5.13",
     "vue-router": "4"
   },
